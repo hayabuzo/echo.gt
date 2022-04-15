@@ -9,7 +9,7 @@ function setup() {
 	background(200);
 	
 	textAlign(CENTER,CENTER);
-	text('Open or drag and drop an image here.',width/2,height/2);
+	text('!!! Open or drag and drop an image here.',width/2,height/2);
 	ellipseMode(CENTER);
 	for(let i = 0; i<10; i++) {
 		noFill().stroke(150+i*5).ellipse(width/2,height/2,300+i*20,300+i*20);
