@@ -264,5 +264,5 @@ function centerCanvas() {
 }
 
 p5.disableFriendlyErrors = true;
-
+ 
 // CJK Unified Ideographs                  4E00-9FFF    19968-40959                Common
