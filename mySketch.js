@@ -1,6 +1,7 @@
 function setup() {
 	
   canvas = createCanvas(800, 600);
+	centerCanvas();
   canvas.drop(addimg);
 	
 	background(200);
@@ -249,7 +250,16 @@ function drawtext() {
 
 function preload() { iml = loadImage('logo79.jpg'); }
 
-function windowResized() { setpos(); }
+function windowResized() { 
+	centerCanvas();
+	setpos(); 
+}
+
+function centerCanvas() {
+  let x = (windowWidth - width) / 2;
+  let y = (windowHeight - height) / 2;
+  canvas.position(x, y);
+}
 
 p5.disableFriendlyErrors = true;
 
