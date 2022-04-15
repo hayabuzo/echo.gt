@@ -1,3 +1,5 @@
+var canvas;
+
 function setup() {
 	
   canvas = createCanvas(800, 600);
