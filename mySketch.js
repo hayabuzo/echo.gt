@@ -106,7 +106,7 @@ function setpos() {
 	
 	file_input.position(cnv.x+20, cnv.y+20).size(350,30);
 	gui.shf.position(cnv.x+20, cnv.y+60).size(350,30);
-	gui.tf.position(cnv.x+150,cnv.y+100).size(165,360);	
+	gui.tf.position(cnv.x+150,cnv.y+100).size(215,360);	
 	
 	let ip = 125;
 	gui.inW.position(cnv.x+55, cnv.y+ip);  ip += 25;
