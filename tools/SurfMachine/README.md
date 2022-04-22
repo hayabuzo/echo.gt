@@ -1,1 +1,1 @@
-Automated table for transliteration.
+**SurfMachine** is an automated Excel table for transliteration.
