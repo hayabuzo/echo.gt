@@ -1,4 +1,4 @@
-# echo.gt (p5js)
+# echo.gt (p5.js)
 Convert images into text using Chinese characters from Unicode and Google Translate.
 
 ![image](https://user-images.githubusercontent.com/38255514/163546192-ddceb332-7b1c-4ff1-b0de-38e1eb29f5c0.png)
