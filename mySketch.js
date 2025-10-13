@@ -189,7 +189,7 @@ function fl() {
 function shift() {
 	gui.inS.value(int(gui.inS.value())+1); // gui.inS.value(int(random(19968,40959-int(gui.inU.value()))));
 	generate();
-	document.getElementById('gLink').click();
+	// document.getElementById('gLink').click();
 }
 
 function generate() {
@@ -198,14 +198,19 @@ function generate() {
 	
 	if(typeof refGoogle !== 'undefined') refGoogle.remove();
 	refGoogle = createA('https://translate.google.com/?sl=auto&tl='+gui.lang.value()+'&text='+a+'&op=translate', 'Google Translate', '_blank');
-	refGoogle.position(cnv.x+200,cnv.y+525);	
+	refGoogle.position(cnv.x+200,cnv.y+515);	
 	refGoogle.style('font-size: 18px;');
   refGoogle.id('gLink');
 	
 	if(typeof refYandex !== 'undefined') refYandex.remove();
 	refYandex = createA('https://translate.yandex.ru/?lang=zh-'+gui.lang.value()+'&text='+a, 'Yandex Translate', '_blank');
-	refYandex.position(cnv.x+200,cnv.y+555);	
+	refYandex.position(cnv.x+200,cnv.y+535);	
 	refYandex.style('font-size: 18px;');
+	
+	if(typeof refItranlate !== 'undefined') refItranlate.remove();
+	refItranlate = createA('https://itranslate.com/translate/chinese-hong-kong-to-english-united-states/'+a, 'iTranslate', '_blank');
+	refItranlate.position(cnv.x+200,cnv.y+555);	
+	refItranlate.style('font-size: 18px;');
 
 }
 
@@ -213,7 +218,7 @@ function addimg(file) {
   if (file.type === 'image') img = loadImage(file.data, img => { 
 		for (let i in gui) { gui[i].style('visibility:visible'); }	
 		generate();
-		document.getElementById('gLink').click();
+		// document.getElementById('gLink').click();
 	});
 }
 
